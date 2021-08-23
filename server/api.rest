@@ -1,0 +1,51 @@
+// Este archivo es requerido por la extensión RestClien en Visual Studio code
+
+###
+GET http://localhost:4000/api/employees
+
+###
+POST http://localhost:4000/api/employees
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name" : "Maria",
+    "position" : "Sr Developer",
+    "office" : "Santa Fe",
+    "salary" : 22000
+}
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name" : "Soledad",
+    "position" : "Jr Developer",
+    "office" : "Santa Fe",
+    "salary" : "2000"
+}
+
+###
+GET http://localhost:4000/api/employees/6122de10f69eda1934900656
+
+###
+DELETE http://localhost:4000/api/employees/6122de58f69eda1934900659
+
+###
+GET http://localhost:4000/api/employees/6122de58f69eda1934900659
+
+###
+GET http://localhost:4000/api/employees/612308b9e876d90db8dae694
+
+
+###
+PUT http://localhost:4000/api/employees/612308b9e876d90db8dae694
+Content-Type: application/json
+
+{
+    "office" : "Revolución",
+    "salary" : 1000
+}
